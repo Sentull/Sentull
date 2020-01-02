@@ -1,0 +1,42 @@
+body {
+  background-color: #00a3aa;
+  background-repeat: no-repeat;
+}
+.btn {
+  background-color: #50677b;
+  color: white;
+}
+.btn:hover {
+  background-color: #666666;
+  color: white;
+}
+.card {
+  box-shadow: 2px 2px 4px black;
+  background-color: #464646;
+  color: white;
+  border-radius: 6px;
+}
+.bg {
+  background-color: #50677b;
+  text-align: center;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.icon {
+  background-color: #50677b;
+  color: white;
+  box-shadow: 2px 2px 4px black;
+}
+.bg-dark {
+    background-color: #343a40;
+}
+#icon:hover {
+  color: black;
+  transition: 2px;
+}
+#icon {
+  color: white;
+}
+#maps {
+  width: 200px;
+}
