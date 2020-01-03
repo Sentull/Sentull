@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,6 +13,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
     <img src="pyramid.png" width="30" height="30" class="rounded-circle">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,48 +44,42 @@
 
     </head>
 <body>
+
     <!-- Contact Us -->
 <div class="container badan">
        
       <div class="row">
-        <div class="col peding-100">
-          <h1>Contact Us</h1>
-          <p>
-            Silahkan Tinggalkan Pesan Anda, Pada Kolom Yang Tersedia.
-          </p>
+        <div class=" col peding-100">
+            <h1>Contact Us</h1>
+            <p>
+                Silahkan Tinggalkan Pesan Anda, Pada Kolom Yang Tersedia.
+            </p>
         </div>
- 
         <div class="col peding-30">
-          <form method="post" action="#">
-             
+        <form action="#" method="POST" onSubmit="validasi()">
             <div class="form-group">
-              <label for="">Nama Anda:</label>
-              <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Anda">
+                <label>Nama Anda:</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama Anda"/>
             </div>
- 
             <div class="form-group">
-              <label for="">E-mail Anda:</label>
-              <input type="email" class="form-control" name="email" placeholder="Masukkan Email Anda">
+                <label>E-mail Anda:</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan E-mail Anda"/>
             </div>
- 
             <div class="form-group">
-              <label for="">Pesan Anda:</label>
-              <textarea name="pesan" class="form-control" cols="30" rows="7" placeholder="Masukkan Pesan Anda"></textarea>
+                <label for="">Pesan Anda:</label>
+                <textarea name="pesan" class="form-control" cols="30" rows="7" id="pesan" placeholder="Masukkan Pesan Anda"></textarea>
+                <br></br>
+            <div>
+                <button onclick="get_nama(),hayu2()" type="submit" class="btn btn-dark" >Submit</button>
             </div>
- 
-            <button onclick="myFunction()" type="submit" class="btn btn-dark">Submit</button>
-            <script>
-                function myFunction() {
-                    confirm("Terima Kasih Atas Masukkan Anda");
-                }
-            </script>
- 
-          </form>
-        </div>
-      </div>
- 
+        </form>
     </div>
-   
+</div>
+</body>
+
+<script src="script.js"></script>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -92,4 +87,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
-
